@@ -6,7 +6,7 @@ namespace DependencyInversionPrinciple
 {
     public enum Relationship
     {
-        Parent,Child,Sibling
+        Parent, Child, Sibling
     }
 
     public class Person
@@ -19,7 +19,7 @@ namespace DependencyInversionPrinciple
         IEnumerable<Person> FindAllChildrenOf(string name);
     }
 
-    public class Relationships: IRelationshipBrowser
+    public class Relationships : IRelationshipBrowser
     {
         //public List<(Person, Relationship, Person)> Relations => _relations;
 
@@ -57,7 +57,7 @@ namespace DependencyInversionPrinciple
 
         public Research(IRelationshipBrowser browser)
         {
-            foreach(var p in browser.FindAllChildrenOf("Alex"))
+            foreach (var p in browser.FindAllChildrenOf("Alex"))
             {
                 Console.WriteLine($"Alex has a child called {p.Name}");
             }

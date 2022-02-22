@@ -24,7 +24,7 @@ namespace LiskovSubstitutionPrinciple
         }
     }
 
-    public class Square: Rectangle
+    public class Square : Rectangle
     {
         public override int Width
         {
@@ -49,7 +49,7 @@ namespace LiskovSubstitutionPrinciple
 
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Rectangle(2,3);
+            Rectangle rectangle = new Rectangle(2, 3);
             Console.WriteLine($"{rectangle} has area {Area(rectangle)}");
 
             Rectangle square = new Square();

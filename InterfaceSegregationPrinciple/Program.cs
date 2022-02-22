@@ -74,7 +74,7 @@ namespace InterfaceSegregationPrinciple
         }
     }
 
-    public interface IMultiFunctionDevice: IScanner,IPrinter //..
+    public interface IMultiFunctionDevice : IScanner, IPrinter //..
     {
 
     }
@@ -84,7 +84,7 @@ namespace InterfaceSegregationPrinciple
         private IPrinter _printer;
         private IScanner _scanener;
 
-        public MultiFunctionMachine(IPrinter printer,IScanner scanner)
+        public MultiFunctionMachine(IPrinter printer, IScanner scanner)
         {
             this._printer = printer ?? throw new ArgumentNullException(nameof(printer));
             this._scanener = scanner ?? throw new ArgumentNullException(nameof(scanner));
