@@ -7,7 +7,7 @@ namespace FluentBuilderInheritanceWithRecursiveGenerics
         public string Name;
         public string Position;
 
-        public class Builder:PersonJobBuilder<Builder>
+        public class Builder : PersonJobBuilder<Builder>
         {
 
         }
@@ -30,8 +30,8 @@ namespace FluentBuilderInheritanceWithRecursiveGenerics
         }
     }
 
-    public class PersonInfoBuilder<Self>:PersonBuilder
-        where Self: PersonInfoBuilder<Self>
+    public class PersonInfoBuilder<Self> : PersonBuilder
+        where Self : PersonInfoBuilder<Self>
     {
         public Self Called(string name)
         {
@@ -41,12 +41,12 @@ namespace FluentBuilderInheritanceWithRecursiveGenerics
     }
 
     public class PersonJobBuilder<Self> : PersonInfoBuilder<PersonJobBuilder<Self>>
-        where Self: PersonJobBuilder<Self>
+        where Self : PersonJobBuilder<Self>
     {
         public Self WorksAsA(string position)
         {
             person.Position = position;
-            return (Self) this;
+            return (Self)this;
         }
     }
 
@@ -56,7 +56,6 @@ namespace FluentBuilderInheritanceWithRecursiveGenerics
         {
             var alex = Person.New.Called("Alex").WorksAsA("Chef").Build();
             Console.WriteLine(alex.ToString());
-
         }
     }
 }
