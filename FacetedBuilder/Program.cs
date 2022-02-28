@@ -17,8 +17,8 @@ namespace FacetedBuilder
     {
         protected Person person = new();
 
-        public PersonAddressBuilder Lives => new PersonAddressBuilder(person);
-        public PersonJobBuilder Works => new PersonJobBuilder(person);
+        public PersonAddressBuilder Lives => new(person);
+        public PersonJobBuilder Works => new(person);
 
         public static implicit operator Person(PersonBuilder pb)
         {
@@ -26,7 +26,7 @@ namespace FacetedBuilder
         }
     }
 
-    public class PersonJobBuilder:PersonBuilder
+    public class PersonJobBuilder : PersonBuilder
     {
         public PersonJobBuilder(Person person)
         {
@@ -76,9 +76,7 @@ namespace FacetedBuilder
             person.City = city;
             return this;
         }
-
     }
-
 
     class Program
     {
