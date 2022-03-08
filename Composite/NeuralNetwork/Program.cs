@@ -13,9 +13,9 @@ namespace NeuralNetwork
             {
                 return;
             }
-            foreach(var from in self)
+            foreach (var from in self)
             {
-                foreach(var to in other)
+                foreach (var to in other)
                 {
                     from.Out.Add(to);
                     to.In.Add(from);
@@ -24,7 +24,7 @@ namespace NeuralNetwork
         }
     }
 
-    public class Neuron:IEnumerable<Neuron>
+    public class Neuron : IEnumerable<Neuron>
     {
         public float Value;
         public List<Neuron> In, Out;
@@ -40,7 +40,7 @@ namespace NeuralNetwork
         }
     }
 
-    public class NeuronLayer: Collection<Neuron>
+    public class NeuronLayer : Collection<Neuron>
     {
 
     }
@@ -61,7 +61,6 @@ namespace NeuralNetwork
             layer1.ConnectTo(neuron2);
             neuron1.ConnectTo(layer2);
             layer1.ConnectTo(layer2);
-
         }
     }
 }
