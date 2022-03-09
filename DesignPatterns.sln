@@ -89,6 +89,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectingDecoratorCycles", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorInDependencyInjection", "CustomStringBuilder\DecoratorInDependencyInjection\DecoratorInDependencyInjection.csproj", "{9CE2347C-C0C9-4966-8477-916A9BF197FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flyweight", "Flyweight", "{902FE1BA-90E6-41D3-A630-AB80AAEE14DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatingUserNames", "RepeatingUserNames\RepeatingUserNames.csproj", "{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattedText", "RepeatingUserNames\FormattedText\FormattedText.csproj", "{6D896164-735E-4E09-B96D-EEE4673C5759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +237,14 @@ Global
 		{9CE2347C-C0C9-4966-8477-916A9BF197FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE2347C-C0C9-4966-8477-916A9BF197FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE2347C-C0C9-4966-8477-916A9BF197FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D896164-735E-4E09-B96D-EEE4673C5759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D896164-735E-4E09-B96D-EEE4673C5759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D896164-735E-4E09-B96D-EEE4673C5759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D896164-735E-4E09-B96D-EEE4673C5759}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -273,5 +287,7 @@ Global
 		{BE343D26-D201-4F7C-8D4F-213897750964} = {D05E0840-90B9-4DDA-84BD-554EFC1F0E27}
 		{8E81C4BC-3157-4BCC-A434-0DB76166F82D} = {D05E0840-90B9-4DDA-84BD-554EFC1F0E27}
 		{9CE2347C-C0C9-4966-8477-916A9BF197FD} = {D05E0840-90B9-4DDA-84BD-554EFC1F0E27}
+		{DF390B3F-A006-4AC2-BCC1-15B1E0320FA8} = {902FE1BA-90E6-41D3-A630-AB80AAEE14DB}
+		{6D896164-735E-4E09-B96D-EEE4673C5759} = {902FE1BA-90E6-41D3-A630-AB80AAEE14DB}
 	EndGlobalSection
 EndGlobal
