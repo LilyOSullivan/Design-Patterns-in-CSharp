@@ -21,7 +21,7 @@ namespace Builder
             Text = text ?? throw new ArgumentNullException(nameof(text));
         }
 
-        private string TOStringImpl(int indent)
+        private string ToStringImpl(int indent)
         {
             var stringBuilder = new StringBuilder();
             var i = new string(' ', _indentSize * indent);
@@ -35,7 +35,7 @@ namespace Builder
 
             foreach (var e in Elements)
             {
-                stringBuilder.Append(e.TOStringImpl(indent + 1));
+                stringBuilder.Append(e.ToStringImpl(indent + 1));
             }
             stringBuilder.Append($"{i}</{Name}>\n");
             return stringBuilder.ToString();
@@ -43,7 +43,7 @@ namespace Builder
 
         public override string ToString()
         {
-            return TOStringImpl(0);
+            return ToStringImpl(0);
         }
     }
 
@@ -79,7 +79,7 @@ namespace Builder
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var hello = "hello";
             var stringBuilder = new StringBuilder();
