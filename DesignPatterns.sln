@@ -121,6 +121,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeCommand", "Command\CompositeCommand\CompositeCommand.csproj", "{5850EB8A-E9A5-466C-BFA3-C4A8092287F8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreter", "Interpreter", "{37F89ED8-487E-45EB-A769-A652DB2A020F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexingAndParsing", "LexingAndParsing\LexingAndParsing.csproj", "{191EFD27-63F0-418E-8B88-51F06B6CADAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -311,6 +315,10 @@ Global
 		{5850EB8A-E9A5-466C-BFA3-C4A8092287F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5850EB8A-E9A5-466C-BFA3-C4A8092287F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5850EB8A-E9A5-466C-BFA3-C4A8092287F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191EFD27-63F0-418E-8B88-51F06B6CADAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191EFD27-63F0-418E-8B88-51F06B6CADAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191EFD27-63F0-418E-8B88-51F06B6CADAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191EFD27-63F0-418E-8B88-51F06B6CADAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -365,5 +373,6 @@ Global
 		{DCE62F75-1313-4954-BB25-4A5FAECBA4C6} = {7E94A941-AB19-4484-831F-1F5E8F6D43E0}
 		{5CE07C06-A329-498B-9B1E-C03246979430} = {8EF74410-1C28-4CB8-908E-F699B1987575}
 		{5850EB8A-E9A5-466C-BFA3-C4A8092287F8} = {8EF74410-1C28-4CB8-908E-F699B1987575}
+		{191EFD27-63F0-418E-8B88-51F06B6CADAD} = {37F89ED8-487E-45EB-A769-A652DB2A020F}
 	EndGlobalSection
 EndGlobal
