@@ -173,7 +173,7 @@ namespace LexingAndParsing
         {
             string input = "(13+4)-(12+1)";
             var tokens = Lexer(input);
-            Console.WriteLine(string.Join("\t", tokens));
+            //Console.WriteLine(string.Join("\t", tokens));
 
             var parsed = Parse(tokens);
             Console.WriteLine($"{input} = {parsed.Value}");
