@@ -88,7 +88,6 @@ namespace Memento
             Console.WriteLine($"Undo: {bankAccount}");
             bankAccount.Redo();
             Console.WriteLine($"Redo: {bankAccount}");
-
         }
     }
 }
