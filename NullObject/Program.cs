@@ -65,7 +65,6 @@ namespace NullObject
                 var bankAccount = container.Resolve<BankAccount>();
                 bankAccount.Deposit(100);
             }
-
         }
     }
 }
