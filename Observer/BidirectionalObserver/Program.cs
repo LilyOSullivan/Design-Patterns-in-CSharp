@@ -43,7 +43,7 @@ namespace BidirectionalObserver
             get => productName;
             set
             {
-                if (value == productName) return; // critical
+                if (value == productName) return; // Prevents infinite recursion
                 productName = value;
                 OnPropertyChanged();
             }
