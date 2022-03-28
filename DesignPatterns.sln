@@ -181,6 +181,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticStrategy", "DynamicSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityAndComparisonStrategies", "DynamicStrategy\EqualityAndComparisonStrategies\EqualityAndComparisonStrategies.csproj", "{B1AB00F5-2DFD-4408-BC72-CD3A97269114}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{69081F39-8FAF-447B-AFEC-918F1C736F71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{F53D6BE4-AFA4-4BC6-B165-F472F41C858C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +463,10 @@ Global
 		{B1AB00F5-2DFD-4408-BC72-CD3A97269114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1AB00F5-2DFD-4408-BC72-CD3A97269114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1AB00F5-2DFD-4408-BC72-CD3A97269114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53D6BE4-AFA4-4BC6-B165-F472F41C858C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53D6BE4-AFA4-4BC6-B165-F472F41C858C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53D6BE4-AFA4-4BC6-B165-F472F41C858C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53D6BE4-AFA4-4BC6-B165-F472F41C858C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -535,5 +543,6 @@ Global
 		{BC7F9671-1738-4F98-B791-8B8FCA79E97D} = {A1B8C30F-491C-4186-AEE8-76BAA61478B5}
 		{81DA2BAC-BD9C-4CCD-8D33-74E17387D4A4} = {A1B8C30F-491C-4186-AEE8-76BAA61478B5}
 		{B1AB00F5-2DFD-4408-BC72-CD3A97269114} = {A1B8C30F-491C-4186-AEE8-76BAA61478B5}
+		{F53D6BE4-AFA4-4BC6-B165-F472F41C858C} = {69081F39-8FAF-447B-AFEC-918F1C736F71}
 	EndGlobalSection
 EndGlobal
